@@ -1,0 +1,24 @@
+.greetings {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    color: #ffff;
+}
+
+.name {
+    color: #E9322E;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 125px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: left;
+    color: #E5E5E5;
+}

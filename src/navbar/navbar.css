@@ -1,6 +1,7 @@
 .navbar-element{
     text-decoration: none;
     color: #959794;
+    font-size: 20px;
 }
 
 .navbar-element:hover{
@@ -10,6 +11,7 @@
 
 .btn-outline-dark {
     color: #959794;
+    font-size: 15px;
 }
 
 .btn-outline-dark:hover {

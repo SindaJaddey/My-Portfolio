@@ -1,0 +1,30 @@
+.badge {
+    background: rgba(69, 67, 62, 0.15);
+    width: 60%;
+}
+
+.btn-outline-dark {
+    color: #959794;
+    font-size: 25px;
+}
+
+.btn-outline-dark:hover {
+    color: #E5E5E5;
+}
+
+.badge-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    color: #E5E5E5;
+}
+
+.badge-description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #E5E5E5;
+    word-wrap: break-word;
+}
