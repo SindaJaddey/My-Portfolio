@@ -1,0 +1,17 @@
+.navbar-element{
+    text-decoration: none;
+    color: #959794;
+}
+
+.navbar-element:hover{
+    color: #E5E5E5;
+    cursor: pointer;
+}
+
+.btn-outline-dark {
+    color: #959794;
+}
+
+.btn-outline-dark:hover {
+    color: #E5E5E5;
+}
