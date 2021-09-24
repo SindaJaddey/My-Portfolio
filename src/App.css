@@ -6,7 +6,6 @@
   width: 55%;
 }
 
-li {
-  list-style-type: square !important;
+li{
   text-align: left;
 }
