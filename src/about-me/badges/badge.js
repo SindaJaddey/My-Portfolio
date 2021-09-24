@@ -3,7 +3,7 @@ import './badge.css';
 
 const Badge = ({img, verificationLink}) => {
     return (
-        <div className="container mt-5 badge">
+        <div className="container mt-1 badge">
             <div className="row">
                 <div className="col-4 im"><img src={img} width={210}/></div>
                 <div className="col-8 des mt-auto mb-auto">
