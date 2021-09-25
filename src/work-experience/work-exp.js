@@ -28,7 +28,7 @@ const WorkExperience = () => {
                                 </Typography>
                                 <Typography style={{'color': "#E5E5E5"}}>
                                     <ul>
-                                        <li>Implemented Infrasturcture as Code - IaC to manage, track and maintain deployed AWS services.</li>
+                                        <li>Implemented Infrastructure as Code - IaC to manage, track and maintain deployed AWS services.</li>
                                         <li>Wrote Python scripts for data connectivity to the deployed databases and data streaming services in AWS.</li>
                                         <li>Implemented multi-threading using Python for data connectivity to AWS Kinesis Streams reaching 100% in read throughput for maximum usage of the data streams.</li>
                                         <li>Implemented auto-scaling mechanism for AWS Kinesis Stream to scale up or down depending on throughput using AWS CloudWatch alarms.</li>

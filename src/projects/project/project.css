@@ -1,0 +1,18 @@
+.project {
+    background: rgba(69, 67, 62, 0.28);
+    width: 85%;
+}
+
+.project-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #E5E5E5;
+}
+
+.project-stack {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    color: #E9322E;
+}

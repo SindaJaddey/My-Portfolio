@@ -6,6 +6,7 @@ import AboutMe from "./about-me/about-me";
 import WorkExperience from "./work-experience/work-exp";
 import {createMuiTheme} from "@material-ui/core";
 import {ThemeProvider} from "@mui/material";
+import Projects from "./projects/projects";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Intro/>
               <AboutMe/>
               <WorkExperience/>
+              <Projects/>
           </div>
       </ThemeProvider>
 
