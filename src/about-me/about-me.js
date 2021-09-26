@@ -40,7 +40,7 @@ const AboutMe = () => {
             </div>
             <div className="row">
                 <div className="row sub-title">Certifications:</div>
-                <Badge img={certif}/>
+                <Badge img={certif} verificationLink={"https://www.credly.com/badges/10d8b0c1-a84a-4942-ae12-c59cb9791dad "}/>
             </div>
         </div>
     )
