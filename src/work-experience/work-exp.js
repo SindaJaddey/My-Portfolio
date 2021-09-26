@@ -7,16 +7,18 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import {Typography} from "@mui/material";
+import Zoom from "react-reveal";
 
 const WorkExperience = () => {
     return(
-        <div className="container" id="work-experience">
-            <div className="row mt-5">
-                <div className="col-5 title">Work Experience</div>
-                <div className="col-7 bar mt-auto mb-auto"/>
-            </div>
-            <div className="row">
-                <Timeline position='alternate'>
+        <Zoom>
+            <div className="container pt-1" id="work-experience">
+                <div className="row mt-5">
+                    <div className="col-5 title">Work Experience</div>
+                    <div className="col-7 bar mt-auto mb-auto"/>
+                </div>
+                <div className="row">
+                    <Timeline position='alternate'>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot color="warning"/>
@@ -36,7 +38,7 @@ const WorkExperience = () => {
                                     </ul>
                                 </Typography>
                             </TimelineContent>
-                            </TimelineItem>
+                        </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot color="warning"/>
@@ -56,9 +58,10 @@ const WorkExperience = () => {
                                 </Typography>
                             </TimelineContent>
                         </TimelineItem>
-                </Timeline>
+                    </Timeline>
+                </div>
             </div>
-        </div>
+        </Zoom>
     )
 }
 

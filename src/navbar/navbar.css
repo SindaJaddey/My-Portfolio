@@ -17,3 +17,10 @@
 .btn-outline-dark:hover {
     color: #E5E5E5;
 }
+
+
+.navbar {
+    height: 7%;
+    /*border: 1px solid white;*/
+    background: rgba(25, 23, 26, 0.68);
+}

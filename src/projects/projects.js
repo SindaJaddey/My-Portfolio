@@ -1,6 +1,7 @@
 import React from "react";
 import './projects.css';
 import Project from "./project/project";
+import {Zoom} from "react-reveal";
 
 const Projects = () => {
     const projects = [
@@ -21,15 +22,18 @@ const Projects = () => {
         }
     ]
     return(
-        <div className="container" id="projects">
-            <div className="row mt-5">
-                <div className="col-3 title">Projects</div>
-                <div className="col-9 bar mt-auto mb-auto"/>
+        <Zoom>
+            <div className="container pt-1" id="projects">
+                <div className="row mt-5">
+                    <div className="col-3 title">Projects</div>
+                    <div className="col-9 bar mt-auto mb-auto"/>
+                </div>
+                <div className="row">
+                    {projects.map(project => <Project title={project.title} description={project.description} techStack={project.stack}/>)}
+                </div>
             </div>
-            <div className="row">
-                {projects.map(project => <Project title={project.title} description={project.description} techStack={project.stack}/>)}
-            </div>
-        </div>
+        </Zoom>
+
     )
 }
 
