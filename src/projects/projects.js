@@ -21,7 +21,7 @@ const Projects = () => {
         }
     ]
     return(
-        <div className="container">
+        <div className="container" id="projects">
             <div className="row mt-5">
                 <div className="col-3 title">Projects</div>
                 <div className="col-9 bar mt-auto mb-auto"/>

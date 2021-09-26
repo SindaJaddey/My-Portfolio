@@ -10,7 +10,7 @@ import {Typography} from "@mui/material";
 
 const WorkExperience = () => {
     return(
-        <div className="container" id="#work-experience">
+        <div className="container" id="work-experience">
             <div className="row mt-5">
                 <div className="col-5 title">Work Experience</div>
                 <div className="col-7 bar mt-auto mb-auto"/>

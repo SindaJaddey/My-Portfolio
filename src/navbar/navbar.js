@@ -10,7 +10,7 @@ const NavBar = () => {
                 <div className={"col"}><a href="#work-experience" className="navbar-element">Work Experience</a> </div>
                 <div className={"col"}><a href="#projects" className="navbar-element">Projects</a></div>
                 <div className={"col"}><a href="#contact-me" className="navbar-element">Contact Me</a></div>
-                <div className={"col"}><button type="button" className="btn btn-outline-dark">Resume</button></div>
+                <div className={"col"}><a href="#contact-me" className="navbar-element">Resume</a></div>
             </div>
         </div>
     )

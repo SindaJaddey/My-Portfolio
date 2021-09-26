@@ -16,7 +16,7 @@ const ContactMe = () => {
     }
 
     return(
-        <div className="container">
+        <div className="container" id="contact-me">
             <div className="row mt-5">
                 <div className="col-4 bar mt-5 mb-auto"/>
                 <div className="col-4 contact-me">Contact Me</div>
