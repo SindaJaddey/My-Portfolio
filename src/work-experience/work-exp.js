@@ -12,8 +12,8 @@ const WorkExperience = () => {
     return(
         <div className="container" id="#work-experience">
             <div className="row mt-5">
-                <div className="col-6 px-5 title">Work Experience</div>
-                <div className="col-6 bar mt-auto mb-auto"/>
+                <div className="col-5 title">Work Experience</div>
+                <div className="col-7 bar mt-auto mb-auto"/>
             </div>
             <div className="row">
                 <Timeline position='alternate'>
@@ -24,7 +24,7 @@ const WorkExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h6" component="span" style={{'color': "white"}}>
-                                    PetaResearch | Jul. 2021 – Aug. 2021, Tunisia
+                                    PetaResearch | Cloud Engineering Intern <br/> Jul. 2021 – Aug. 2021, Tunisia
                                 </Typography>
                                 <Typography style={{'color': "#E5E5E5"}}>
                                     <ul>
@@ -44,7 +44,7 @@ const WorkExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h6" component="span" style={{'color': "white"}}>
-                                    iPrecision | Jul. 2020 – Sept. 2020, Tunisia
+                                    iPrecision | Software Engineering Intern <br/> Jul. 2020 – Sept. 2020, Tunisia
                                 </Typography>
                                 <Typography style={{'color': "#E5E5E5"}}>
                                     <ul>

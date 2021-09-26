@@ -23,8 +23,8 @@ const Projects = () => {
     return(
         <div className="container">
             <div className="row mt-5">
-                <div className="col-4 px-5 title">Projects</div>
-                <div className="col-8 bar mt-auto mb-auto"/>
+                <div className="col-3 title">Projects</div>
+                <div className="col-9 bar mt-auto mb-auto"/>
             </div>
             <div className="row">
                 {projects.map(project => <Project title={project.title} description={project.description} techStack={project.stack}/>)}

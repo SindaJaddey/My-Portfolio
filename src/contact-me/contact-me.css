@@ -1,0 +1,18 @@
+.contact-me {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 70px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.icon:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon {
+    text-decoration: none;
+
+}

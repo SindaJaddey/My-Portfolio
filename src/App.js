@@ -7,6 +7,8 @@ import WorkExperience from "./work-experience/work-exp";
 import {createMuiTheme} from "@material-ui/core";
 import {ThemeProvider} from "@mui/material";
 import Projects from "./projects/projects";
+import ContactMe from "./contact-me/contact-me";
+import Footer from "./footer/footer";
 
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
             warning: {
                 main: '#E9322E',
             },
+            primary:{
+                main: '#E5E5E5'
+            }
         },
         typography: {
             fontFamily: [
@@ -28,6 +33,8 @@ function App() {
               <AboutMe/>
               <WorkExperience/>
               <Projects/>
+              <ContactMe/>
+              <Footer/>
           </div>
       </ThemeProvider>
 
