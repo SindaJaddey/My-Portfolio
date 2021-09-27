@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {Button} from "@material-ui/core";
 import {Zoom} from "react-reveal";
+import {SocialIcon} from "react-social-icons";
 
 const ContactMe = () => {
 
@@ -26,13 +27,26 @@ const ContactMe = () => {
                 </div>
                 <div className="row mt-4">
                     <div className="col-4 icon">
-                        <Button size="large" href="mailto:sindajeddey@gmail.com" color="primary" style={{ color: '#E5E5E5' }} startIcon={<EmailIcon/>}>sindajeddey@gmail.com</Button>
+                        <SocialIcon title={"sindajeddey@gmail.com"}
+                                    url={"mailto:sindajeddey@gmail.com"}
+                                    style={{ height: 75, width: 75 }}/>
+                        <div className="col-12 mt-3">sindajeddey@gmail.com</div>
+
                     </div>
                     <div className="col-4 icon">
-                        <Button size="large" startIcon={<LinkedInIcon/>} onClick={linkedinClick}>Sinda Jeddey</Button>
+                        <SocialIcon title={"Sinda Jeddey"}
+                                    onClick={linkedinClick}
+                                    network={'linkedin'}
+                                    style={{ height: 75, width: 75 }}/>
+                        <div className="col-12 mt-3">Sinda Jeddey</div>
                     </div>
                     <div className="col-4 icon">
-                        <Button size="large" startIcon={<GitHubIcon/>} onClick={githubClick}>SindaJeddey</Button>
+                        <SocialIcon title={"SindaJeddey"}
+                                    network={'github'}
+                                    onClick={githubClick}
+                                    style={{ height: 75, width: 75 }}
+                                    bgColor="#E5E5E5"/>
+                        <div className="col-12 mt-3">SindaJeddey</div>
                     </div>
                 </div>
             </div>

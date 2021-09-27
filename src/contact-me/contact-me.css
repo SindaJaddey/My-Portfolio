@@ -6,13 +6,6 @@
     color: #E5E5E5;
     text-align: center;
 }
-
-.icon:hover{
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.icon {
-    text-decoration: none;
-
-}
+ .icon:hover{
+     cursor: pointer;
+ }
