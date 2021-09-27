@@ -22,7 +22,7 @@ function App() {
         },
         typography: {
             fontFamily: [
-                'IBM Plex Mono'
+                'Montserrat'
             ].join(','),
         },});
   return (
