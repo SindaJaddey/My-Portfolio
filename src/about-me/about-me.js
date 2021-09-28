@@ -20,7 +20,7 @@ const AboutMe = () => {
                 </div>
                 <div className="row">
                     <div className="col-7 pt-2 about-description">
-                        Hi, my name is Sinda Jeddey and I’m a Cloud and DevOps enthusiast! I got introduced to Cloud Computing in the start of 2019 and from then started my journey and I got certified as an AWS Certified Developer Associate.
+                        Hi, my name is Sinda Jeddey and I’m a Cloud Computing and DevOps enthusiast! I got introduced to Cloud Computing in the start of 2019 and from then started my journey and I got certified as an AWS Certified Developer Associate.
                         <br/><br/>
                         I also got the chance to work on multiple web applications in both front-end and back-end development.
                     </div>

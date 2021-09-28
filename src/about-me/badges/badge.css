@@ -1,11 +1,11 @@
 .badge {
-    background: rgba(69, 67, 62, 0.15);
+    background: rgba(238, 155, 0, 0.8);
     width: 80%;
 }
 
 .btn-outline-dark {
-    color: #959794;
-    font-size: 25px;
+    color: #45433E;
+    font-size: 30px;
 }
 
 .btn-outline-dark:hover {

@@ -1,6 +1,8 @@
 .project {
-    background: rgba(69, 67, 62, 0.28);
+    background: rgba(43, 122, 120, 0.7);
     width: 80%;
+    color: #E5E5E5;
+    border-radius: 5px;
 }
 
 .project-title {
@@ -8,11 +10,4 @@
     font-weight: 700;
     font-size: 19px;
     color: #E5E5E5;
-}
-
-.project-stack {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    color: #E9322E;
 }

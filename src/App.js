@@ -14,15 +14,15 @@ import Footer from "./footer/footer";
 function App() {
     const theme = createMuiTheme({palette: {
             warning: {
-                main: '#E9322E',
+                main: '#ee9b00',
             },
             primary:{
-                main: '#E5E5E5'
+                main: '#45433E'
             }
         },
         typography: {
             fontFamily: [
-                'Montserrat'
+                'IBM Plex Sans'
             ].join(','),
         },});
   return (

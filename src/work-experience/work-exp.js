@@ -25,10 +25,10 @@ const WorkExperience = () => {
                                 <TimelineConnector/>
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Typography variant="h6" component="span" style={{'color': "white"}}>
+                                <Typography variant="h6" component="span" style={{'color': "#45433E"}}>
                                     PetaResearch | Cloud Engineering Intern <br/> Jul. 2021 – Aug. 2021, Tunisia
                                 </Typography>
-                                <Typography style={{'color': "#E5E5E5"}}>
+                                <Typography style={{'color': "#45433E"}}>
                                     <ul>
                                         <li>Implemented Infrastructure as Code - IaC to manage, track and maintain deployed AWS services.</li>
                                         <li>Wrote Python scripts for data connectivity to the deployed databases and data streaming services in AWS.</li>
@@ -45,10 +45,10 @@ const WorkExperience = () => {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Typography variant="h6" component="span" style={{'color': "white"}}>
+                                <Typography variant="h6" component="span" style={{'color': "#45433E"}}>
                                     iPrecision | Software Engineering Intern <br/> Jul. 2020 – Sept. 2020, Tunisia
                                 </Typography>
-                                <Typography style={{'color': "#E5E5E5"}}>
+                                <Typography style={{'color': "#45433E"}}>
                                     <ul>
                                         <li>Participated in every step of the product development process of a system that monitors and controls electronic shelf labels for supermarkets from design through development and improvement of features.</li>
                                         <li>Put together RESTful APIs for the back-end that served data to the React front-end.</li>

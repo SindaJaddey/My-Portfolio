@@ -1,12 +1,14 @@
 .navbar-element{
     text-decoration: none;
-    color: #959794;
+    color: #8e8d8a;
+    font-weight: 500;
     font-size: 18px;
 }
 
 .navbar-element:hover{
-    color: #E5E5E5;
+    color: #eeb900;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .btn-outline-dark {
@@ -22,5 +24,4 @@
 .navbar {
     height: 7%;
     /*border: 1px solid white;*/
-    background: rgba(25, 23, 26, 0.68);
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.css"
-import Zoom from "react-reveal";
 const NavBar = () => {
     //button on click function to redirect to pdf
     return(

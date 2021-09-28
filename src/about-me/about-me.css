@@ -1,23 +1,23 @@
 .title {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px;
     line-height: 83px;
-    color: #E5E5E5;
+    color: #17252a;
     text-align: left;
 }
 
 .bar{
-    border-bottom: 1px solid rgba(233, 50, 46, 0.73);
+    border-bottom: 1px solid #17252a;
 }
 
 .about-description, .tech-skills {
     text-align: left;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 39px;
-    color: #FFFFFF;
+    color: #45433E;
 }
 
 .image {
@@ -29,5 +29,5 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 83px;
-    color: #E9322E;
+    color: #2b7a78;
 }

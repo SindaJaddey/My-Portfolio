@@ -29,7 +29,8 @@ const ContactMe = () => {
                     <div className="col-4 icon">
                         <SocialIcon title={"sindajeddey@gmail.com"}
                                     url={"mailto:sindajeddey@gmail.com"}
-                                    style={{ height: 75, width: 75 }}/>
+                                    style={{ height: 75, width: 75 }}
+                                    bgColor="#eeb900"/>
                         <div className="col-12 mt-3">sindajeddey@gmail.com</div>
 
                     </div>
@@ -45,7 +46,7 @@ const ContactMe = () => {
                                     network={'github'}
                                     onClick={githubClick}
                                     style={{ height: 75, width: 75 }}
-                                    bgColor="#E5E5E5"/>
+                                    bgColor="#45433E"/>
                         <div className="col-12 mt-3">SindaJeddey</div>
                     </div>
                 </div>
