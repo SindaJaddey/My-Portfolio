@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #work-experience{
+        width: 90%;
+    }
+
+    .experience {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .experience-title{
+        font-weight: 600;
+    }
+
+    .experience-duration {
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .experience-enterprise {
+        font-weight: 600;
+        color: #eeb900;
+    }
+
+    li::before {
+        color: #eeb900;
+    }
+}

@@ -9,3 +9,9 @@
     font-style: normal;
     font-weight: 400;
 }
+
+@media screen and (max-width: 414px) {
+    .technology{
+        margin-top: 2%;
+    }
+}

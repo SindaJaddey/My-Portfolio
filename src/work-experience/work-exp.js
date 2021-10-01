@@ -10,15 +10,42 @@ import {Typography} from "@mui/material";
 import Zoom from "react-reveal";
 
 const WorkExperience = () => {
+    const windowWidth = window.innerWidth
+    const experiences = [
+        {
+            enterprise: "PetaResearch",
+            title: "Cloud Engineering Intern",
+            duration: "Jul. 2021 – Aug. 2021, Tunisia",
+            bullets: [
+                "Implemented Infrastructure as Code - IaC to manage, track and maintain deployed AWS services.",
+                "Wrote Python scripts for data connectivity to the deployed databases and data streaming services in AWS.",
+                "Implemented multi-threading using Python for data connectivity to AWS Kinesis Streams.",
+                "Implemented auto-scaling mechanism for AWS Kinesis Stream using AWS CloudWatch alarms.",
+                "Designed and deployed a serverless ETL pipeline that consumes user input."
+            ]
+        },
+        {
+            enterprise: "iPrecision",
+            title: "Software Engineering Intern",
+            duration: "Jul. 2020 – Sept. 2020, Tunisia",
+            bullets: [
+                "Participated in the product development process of a system that monitors and controls electronic shelf labels for supermarkets.",
+                "Put together RESTful APIs for the back-end that served data to the front-end.",
+                "Conducted unit and integration testing on the back-end’s APIs with 60% code coverage.",
+                "Set up a CI/CD pipeline and enabled e-mail notifications of build results and output logs.",
+            ]
+        }
+    ]
     return(
         <Zoom>
             <div className="container pt-1" id="work-experience">
                 <div className="row mt-5">
-                    <div className="col-5 title">Work Experience</div>
-                    <div className="col-7 bar mt-auto mb-auto"/>
+                    <div className="col-sm-12 col-md-5 title">Work Experience</div>
+                    <div className="col-sm-12 col-md-7 bar mt-auto mb-auto"/>
                 </div>
                 <div className="row">
-                    <Timeline position='alternate'>
+                    { windowWidth > 768 ? <Timeline position={'alternate'}>
+                    {experiences.map(experience =>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot color="warning"/>
@@ -26,39 +53,27 @@ const WorkExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h6" component="span" style={{'color': "#45433E"}}>
-                                    PetaResearch | Cloud Engineering Intern <br/> Jul. 2021 – Aug. 2021, Tunisia
+                                    {experience.enterprise} | {experience.title}<br/> {experience.duration}
                                 </Typography>
                                 <Typography style={{'color': "#45433E"}}>
                                     <ul>
-                                        <li>Implemented Infrastructure as Code - IaC to manage, track and maintain deployed AWS services.</li>
-                                        <li>Wrote Python scripts for data connectivity to the deployed databases and data streaming services in AWS.</li>
-                                        <li>Implemented multi-threading using Python for data connectivity to AWS Kinesis Streams reaching 100% in read throughput for maximum usage of the data streams.</li>
-                                        <li>Implemented auto-scaling mechanism for AWS Kinesis Stream to scale up or down depending on throughput using AWS CloudWatch alarms.</li>
-                                        <li>Designed and deployed a serverless ETL pipeline that consumes user input.</li>
+                                    {experience.bullets.map(bullet => <li>{bullet}</li>)}
                                     </ul>
                                 </Typography>
                             </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot color="warning"/>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Typography variant="h6" component="span" style={{'color': "#45433E"}}>
-                                    iPrecision | Software Engineering Intern <br/> Jul. 2020 – Sept. 2020, Tunisia
-                                </Typography>
-                                <Typography style={{'color': "#45433E"}}>
-                                    <ul>
-                                        <li>Participated in every step of the product development process of a system that monitors and controls electronic shelf labels for supermarkets from design through development and improvement of features.</li>
-                                        <li>Put together RESTful APIs for the back-end that served data to the React front-end.</li>
-                                        <li>Conducted unit and integration testing on the back-end’s RESTful APIs with 60% code coverage.</li>
-                                        <li>Set up a continuous integration and continuous deployment CI/CD pipeline and enabled e-mail notifications of build results and output logs.</li>
-                                    </ul>
-                                </Typography>
-                            </TimelineContent>
-                        </TimelineItem>
-                    </Timeline>
+                        </TimelineItem>)}
+                        </Timeline> :
+                        experiences.map(experience =>
+                            <div className="container mt-2 mb-5 experience">
+                                <div className="row">
+                                    <div className="col-sm-12 experience-enterprise">{experience.enterprise}</div>
+                                    <div className="col-sm-12 experience-title">{experience.title}</div>
+                                    <div className="col-sm-12 experience-duration">{experience.duration}</div>
+                                </div>
+                                <div className="row">
+                                    {experience.bullets.map(bullet => <li className="col-sm-12 mt-2 experience-bullet">{bullet}</li>)}
+                                </div>
+                            </div>)}
                 </div>
             </div>
         </Zoom>

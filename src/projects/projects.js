@@ -64,10 +64,10 @@ const Projects = () => {
         <Zoom>
             <div className="container pt-1" id="projects">
                 <div className="row mt-5">
-                    <div className="col-3 title">Projects</div>
-                    <div className="col-9 bar mt-auto mb-auto"/>
+                    <div className="col-sm col-md-3 title">Projects</div>
+                    <div className="col-sm col-md-9 bar mt-auto mb-auto"/>
                 </div>
-                <div className="row">
+                <div className="row mt-2">
                     {projects.map(project => <Project title={project.title} description={project.description} techStack={project.stack}/>)}
                 </div>
             </div>

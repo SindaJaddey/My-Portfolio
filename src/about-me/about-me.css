@@ -3,12 +3,12 @@
     font-weight: 600;
     font-size: 45px;
     line-height: 83px;
-    color: #17252a;
+    color: black;
     text-align: left;
 }
 
 .bar{
-    border-bottom: 1px solid #17252a;
+    border-bottom: 1px solid black;
 }
 
 .about-description, .tech-skills {
@@ -29,5 +29,23 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 83px;
-    color: #2b7a78;
+    color: #eeb900;
+}
+
+
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-description, .tech-skills {
+        font-size: 20px;
+        color: #45433E;
+        text-align: center;
+    }
+
+    #about-me{
+        width: 90%;
+    }
 }

@@ -1,24 +1,32 @@
-.greetings {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 47px;
-    color: #8e8d8a;
-}
-
 .name {
-    color: #3aafa9  ;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 75px;
-    line-height: 125px;
+    color: black;
+    font-weight: 700;
+    font-size: 180px;
+    text-align: center;
 }
 
 .intro-description {
-    font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 47px;
-    text-align: left;
-    color: #45433E  ;
+    font-size: 30px;
+    text-align: center;
+    color: #45433E;
+}
+
+.intro{
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px){
+    .name{
+        text-align: center;
+        font-size: 65px;
+    }
+
+    .intro-description{
+        text-align: center;
+        font-size: 20px;
+    }
+    #intro{
+        width: 100%;
+    }
 }

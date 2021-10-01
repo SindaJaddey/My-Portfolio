@@ -1,11 +1,25 @@
 .contact-me {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px;
     line-height: 70px;
-    color: #17252a;
+    color: black;
     text-align: center;
 }
- .icon:hover{
+.icon:hover{
      cursor: pointer;
- }
+}
+@media screen and (max-width: 768px){
+    .contact-me{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #contact-me{
+        width: 90%;
+    }
+
+    .icon{
+        margin-bottom: 10%;
+    }
+}

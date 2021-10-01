@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <div className="container">
             <div className="row">
-                <div className="col footer">Designed and built by Sinda Jeddey.</div>
+                <div className="col-sm footer">Designed and built by Sinda Jeddey.</div>
             </div>
         </div>
     )

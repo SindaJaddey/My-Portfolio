@@ -19,29 +19,27 @@ const ContactMe = () => {
 
     return(
         <Zoom>
-            <div className="container pt-1" id="contact-me">
-                <div className="row mt-5">
-                    <div className="col-4 bar mt-5 mb-auto"/>
-                    <div className="col-4 contact-me">Contact Me</div>
-                    <div className="col-4 bar mt-5 mb-auto"/>
+            <div className="container py-5 my-5 " id="contact-me">
+                <div className="row mt-5 pt-5">
+                    <div className="col-sm col-md-4 contact-me">Contact Me</div>
+                    <div className="col-sm col-md-8 bar mt-auto mb-auto"/>
                 </div>
-                <div className="row mt-4">
-                    <div className="col-4 icon">
+                <div className="row mt-4 pb-5 mb-5">
+                    <div className="col-md-4 icon">
                         <SocialIcon title={"sindajeddey@gmail.com"}
                                     url={"mailto:sindajeddey@gmail.com"}
                                     style={{ height: 75, width: 75 }}
                                     bgColor="#eeb900"/>
                         <div className="col-12 mt-3">sindajeddey@gmail.com</div>
-
                     </div>
-                    <div className="col-4 icon">
+                    <div className="col-md-4 icon">
                         <SocialIcon title={"Sinda Jeddey"}
                                     onClick={linkedinClick}
                                     network={'linkedin'}
                                     style={{ height: 75, width: 75 }}/>
                         <div className="col-12 mt-3">Sinda Jeddey</div>
                     </div>
-                    <div className="col-4 icon">
+                    <div className="col-md-4 icon">
                         <SocialIcon title={"SindaJeddey"}
                                     network={'github'}
                                     onClick={githubClick}

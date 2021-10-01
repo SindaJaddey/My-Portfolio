@@ -1,14 +1,16 @@
 import React from "react";
 import './intro.css';
 import Zoom from "react-reveal";
+import Fade from "react-reveal";
 
 const Intro = () => {
     return(
         <Zoom>
-            <div className="container mt-5 pt-5">
-                <div className="row greetings mt-1 pt-5">Hello, I'm</div>
-                <div className="row name pt-2">Sinda Jeddey</div>
-                <div className="row intro-description pt-1 mb-5">I’m a last year software engineering student specialized in DevOps and Cloud Computing and an AWS Certified Developer Associate.</div>
+            <div className="container-fluid intro" id="intro">
+                <div className="row align-content-center h-100 justify-content-center">
+                    <div className="col-md-8 col-sm-12 mt-2 name"><Fade bottom>Hello! I'm Sinda Jeddey</Fade></div>
+                    <div className="col-md-8 col-sm-12 mt-5 intro-description"><Fade bottom> and I'm a DevOps and Cloud Computing enthusiast!</Fade></div>
+                </div>
             </div>
         </Zoom>
     )
