@@ -7,6 +7,10 @@
     text-align: left;
 }
 
+#about-me{
+    height: 100vh;
+}
+
 .bar{
     border-bottom: 1px solid black;
 }
@@ -26,7 +30,7 @@
 
 .sub-title {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     line-height: 83px;
     color: #eeb900;
@@ -47,5 +51,6 @@
 
     #about-me{
         width: 90%;
+        height: 100%;
     }
 }

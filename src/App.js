@@ -28,7 +28,7 @@ function App() {
   return (
       <ThemeProvider theme={theme}>
           <div className="App">
-              {/*<NavBar/>*/}
+              <NavBar/>
               <Intro/>
               <AboutMe/>
               <WorkExperience/>

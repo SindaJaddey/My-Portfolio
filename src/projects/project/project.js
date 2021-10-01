@@ -1,6 +1,8 @@
 import React from "react";
 import './project.css';
 import Technology from "./technology/technology";
+import Zoom from "react-reveal";
+import Fade from "react-reveal";
 
 const Project = ({title, description, techStack}) => {
     const nbRows = techStack.length % 3 === 0 ? techStack.length/3 : techStack.length/3 + 1;
@@ -16,15 +18,21 @@ const Project = ({title, description, techStack}) => {
     }
 
     return(
-        <div className="container mt-2 mb-4 project">
-            <div className="row">
-                <div className="col mt-1 project-title">{title}</div>
+        <Zoom>
+            <div className="container mt-2 mb-4 project">
+                <Fade bottom>
+                    <div className="row">
+                        <div className="col mt-1 project-title">{title}</div>
+                    </div>
+                </Fade>
+                <Fade bottom>
+                    <div className="row">
+                        <div className="col mt-3 project-description">{description}</div>
+                    </div>
+                </Fade>
+                {rows}
             </div>
-            <div className="row">
-                <div className="col mt-3 project-description">{description}</div>
-            </div>
-            {rows}
-        </div>
+        </Zoom>
     )
 }
 

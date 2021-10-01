@@ -1,7 +1,8 @@
 import React from "react";
 import './projects.css';
 import Project from "./project/project";
-import {Zoom} from "react-reveal";
+import Zoom from "react-reveal";
+import Fade from "react-reveal";
 import NestJS from '../assets/images/nestjs.png';
 import Docker from '../assets/images/docker.png';
 import Kubernetes from '../assets/images/kuberntes.png';
@@ -63,10 +64,12 @@ const Projects = () => {
     return(
         <Zoom>
             <div className="container pt-1" id="projects">
-                <div className="row mt-5">
-                    <div className="col-sm col-md-3 title">Projects</div>
-                    <div className="col-sm col-md-9 bar mt-auto mb-auto"/>
-                </div>
+                <Fade bottom>
+                    <div className="row mt-5">
+                        <div className="col-sm col-md-3 title">Projects</div>
+                        <div className="col-sm col-md-9 bar mt-auto mb-auto"/>
+                    </div>
+                </Fade>
                 <div className="row mt-2">
                     {projects.map(project => <Project title={project.title} description={project.description} techStack={project.stack}/>)}
                 </div>

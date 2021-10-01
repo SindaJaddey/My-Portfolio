@@ -8,6 +8,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import {Typography} from "@mui/material";
 import Zoom from "react-reveal";
+import Fade from "react-reveal";
 
 const WorkExperience = () => {
     const windowWidth = window.innerWidth
@@ -34,17 +35,20 @@ const WorkExperience = () => {
                 "Conducted unit and integration testing on the back-end’s APIs with 60% code coverage.",
                 "Set up a CI/CD pipeline and enabled e-mail notifications of build results and output logs.",
             ]
-        }
+        },
     ]
     return(
         <Zoom>
             <div className="container pt-1" id="work-experience">
-                <div className="row mt-5">
-                    <div className="col-sm-12 col-md-5 title">Work Experience</div>
-                    <div className="col-sm-12 col-md-7 bar mt-auto mb-auto"/>
-                </div>
+                <Fade bottom>
+                    <div className="row mt-5">
+                        <div className="col-sm-12 col-md-5 title">Work Experience</div>
+                        <div className="col-sm-12 col-md-7 bar mt-auto mb-auto"/>
+                    </div>
+                </Fade>
                 <div className="row">
-                    { windowWidth > 768 ? <Timeline position={'alternate'}>
+                    { windowWidth > 768 ?<Fade bottom>
+                        <Timeline position={'alternate'}>
                     {experiences.map(experience =>
                         <TimelineItem>
                             <TimelineSeparator>
@@ -52,7 +56,7 @@ const WorkExperience = () => {
                                 <TimelineConnector/>
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Typography variant="h6" component="span" style={{'color': "#45433E"}}>
+                                <Typography variant="h5" component="span" style={{'color': "#45433E"}}>
                                     {experience.enterprise} | {experience.title}<br/> {experience.duration}
                                 </Typography>
                                 <Typography style={{'color': "#45433E"}}>
@@ -62,17 +66,20 @@ const WorkExperience = () => {
                                 </Typography>
                             </TimelineContent>
                         </TimelineItem>)}
-                        </Timeline> :
+                        </Timeline>
+                        </Fade>:
                         experiences.map(experience =>
                             <div className="container mt-2 mb-5 experience">
-                                <div className="row">
-                                    <div className="col-sm-12 experience-enterprise">{experience.enterprise}</div>
-                                    <div className="col-sm-12 experience-title">{experience.title}</div>
-                                    <div className="col-sm-12 experience-duration">{experience.duration}</div>
-                                </div>
-                                <div className="row">
-                                    {experience.bullets.map(bullet => <li className="col-sm-12 mt-2 experience-bullet">{bullet}</li>)}
-                                </div>
+                                <Fade bottom>
+                                    <div className="row">
+                                        <div className="col-sm-12 experience-enterprise">{experience.enterprise}</div>
+                                        <div className="col-sm-12 experience-title">{experience.title}</div>
+                                        <div className="col-sm-12 experience-duration">{experience.duration}</div>
+                                    </div>
+                                    <div className="row">
+                                        {experience.bullets.map(bullet => <li className="col-sm-12 mt-2 experience-bullet">{bullet}</li>)}
+                                    </div>
+                                </Fade>
                             </div>)}
                 </div>
             </div>

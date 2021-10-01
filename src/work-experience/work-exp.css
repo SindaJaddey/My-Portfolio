@@ -6,6 +6,7 @@
 
     #work-experience{
         width: 90%;
+        height: 100%;
     }
 
     .experience {
@@ -30,4 +31,8 @@
     li::before {
         color: #eeb900;
     }
+}
+
+#work-experience{
+    height: 100vh;
 }
