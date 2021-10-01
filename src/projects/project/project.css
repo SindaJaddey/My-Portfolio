@@ -1,7 +1,7 @@
 .project {
     background: #eeb900;
     width: 80%;
-    color: #E5E5E5;
+    color: #ffffff;
     border-radius: 5px;
 }
 
@@ -9,7 +9,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
-    color: #E5E5E5;
 }
 
 @media screen and (max-width: 414px){

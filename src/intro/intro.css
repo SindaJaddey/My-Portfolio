@@ -1,10 +1,13 @@
 .name {
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 180px;
     text-align: center;
 }
-
+.keyword {
+    color: #eeb900;
+    font-weight: bold;
+}
 .intro-description {
     font-weight: normal;
     font-size: 30px;

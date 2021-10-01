@@ -15,17 +15,17 @@
 .badge-title {
     font-style: normal;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 20px;
     text-align: center;
-    color: #E5E5E5;
+    color: #ffffff;
 }
 
 .badge-description{
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
-    color: #E5E5E5;
+    color: #ffffff;
     word-wrap: break-word;
 }
 
