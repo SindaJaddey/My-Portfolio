@@ -22,7 +22,7 @@ function App() {
         },
         typography: {
             fontFamily: [
-                'IBM Plex Sans'
+                'Gilroy'
             ].join(','),
         },});
   return (

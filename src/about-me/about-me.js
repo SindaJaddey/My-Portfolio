@@ -43,17 +43,17 @@ const AboutMe = () => {
                     </Fade>
                     <Fade bottom>
                         <div className="col-sm col-md-4">
-                            <ul>{languages.map(language => <li>{language}</li>)}</ul>
+                            <ul>{languages.map(language => <li className="tech-skills">{language}</li>)}</ul>
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="col-sm col-md-4">
-                            <ul>{iac.map(el => <li>{el}</li>)}</ul>
+                            <ul>{iac.map(el => <li className="tech-skills">{el}</li>)}</ul>
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="col-sm col-md-4">
-                            <ul>{others.map(el => <li>{el}</li>)}</ul>
+                            <ul>{others.map(el => <li className="tech-skills">{el}</li>)}</ul>
                         </div>
                     </Fade>
                 </div>

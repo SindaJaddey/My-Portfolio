@@ -6,9 +6,13 @@
 }
 
 .project-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.project-description{
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 @media screen and (max-width: 414px){

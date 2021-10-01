@@ -1,6 +1,27 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url("./assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url("./assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url("./assets/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: lighter;
+}
+
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif  !important;
   -webkit-font-smoothing: antialiased;
@@ -13,5 +34,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 
 
