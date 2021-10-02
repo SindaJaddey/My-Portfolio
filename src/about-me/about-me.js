@@ -14,7 +14,7 @@ const AboutMe = () => {
 
     return (
         <Zoom>
-            <div className="container pt-1" id="about-me">
+            <div className="container pt-3" id="about-me">
                 <Fade bottom>
                     <div className="row mt-5">
                         <div className="col-sm col-md-3 title">About Me</div>

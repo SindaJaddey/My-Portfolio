@@ -63,7 +63,7 @@ const Projects = () => {
     ]
     return(
         <Zoom>
-            <div className="container pt-1" id="projects">
+            <div className="container pt-3" id="projects">
                 <Fade bottom>
                     <div className="row mt-5">
                         <div className="col-sm col-md-3 title">Projects</div>

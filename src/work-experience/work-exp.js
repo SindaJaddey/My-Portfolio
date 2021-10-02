@@ -39,7 +39,7 @@ const WorkExperience = () => {
     ]
     return(
         <Zoom>
-            <div className="container pt-1" id="work-experience">
+            <div className="container pt-3" id="work-experience">
                 <Fade bottom>
                     <div className="row mt-5">
                         <div className="col-sm-12 col-md-5 title">Work Experience</div>

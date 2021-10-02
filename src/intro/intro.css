@@ -1,22 +1,39 @@
 .name {
     color: black;
     font-weight: 600;
-    font-size: 180px;
-    text-align: center;
+    font-size: 48px;
+    text-align: left;
 }
 .keyword {
-    color: #eeb900;
+    color: #F1BA0A;
     font-weight: bold;
 }
 .intro-description {
     font-weight: normal;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     color: #45433E;
 }
 
 .intro{
     height: 100vh;
+}
+
+.intro-container {
+    position: relative;
+    background: url("../assets/images/sinda.png") center right no-repeat;
+    background-size: auto 100%;
+}
+
+.intro-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 55%, transparent 55%, transparent 100%);
 }
 
 @media screen and (max-width: 768px){
