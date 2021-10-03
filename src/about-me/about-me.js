@@ -24,7 +24,7 @@ const AboutMe = () => {
                 </Fade>
                 <div className="row">
                     <Fade bottom>
-                        <div className="col-sm-12 col-md-7 pt-2 about-description">
+                        <div className="col-sm-12 col-md-12 col-lg-7 pt-2 about-description">
                             Hi, my name is Sinda Jeddey and I’m a last year software engineering student specialized in DevOps and Cloud Computing.
                             These fields sparked interest and curiosity in me in the early start of 2019 and from then started my journey.
                             <br/>I also got certified as an AWS Certified Developer Associate.
@@ -32,7 +32,7 @@ const AboutMe = () => {
                         </div>
                     </Fade>
                     <Fade bottom>
-                        <div className="col-sm-12 col-md-5">
+                        <div className="col-sm-12 col-md-12 col-lg-5">
                             <img src={image} height={300} className="image"/>
                         </div>
                     </Fade>

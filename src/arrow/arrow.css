@@ -25,3 +25,12 @@
         transform: translateY(-15px);
     }
 }
+
+@media screen and (max-width: 576px){
+    .up {
+        text-align: center;
+        position: fixed;
+        bottom: 1%;
+        width: 100%;
+    }
+}
