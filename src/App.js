@@ -9,36 +9,58 @@ import {ThemeProvider} from "@mui/material";
 import Projects from "./projects/projects";
 import ContactMe from "./contact-me/contact-me";
 import Footer from "./footer/footer";
+import Arrow from "./arrow/arrow";
+import React, {Component} from "react";
+import {Router, withRouter} from "react-router-dom";
 
 
-function App() {
-    const theme = createMuiTheme({palette: {
-            warning: {
-                main: '#ee9b00',
+class App extends Component{
+    state = {
+        lastScrollY: 0
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        this.setState({
+            lastScrollY: window.scrollY
+        });
+    };
+    render() {
+        const theme = createMuiTheme({palette: {
+                warning: {
+                    main: '#ee9b00',
+                },
+                primary:{
+                    main: '#45433E'
+                }
             },
-            primary:{
-                main: '#45433E'
-            }
-        },
-        typography: {
-            fontFamily: [
-                'Gilroy'
-            ].join(','),
-        },});
-  return (
-      <ThemeProvider theme={theme}>
-          <div className="App">
-              <NavBar/>
-              <Intro/>
-              <AboutMe/>
-              <WorkExperience/>
-              <Projects/>
-              <ContactMe/>
-              <Footer/>
-          </div>
-      </ThemeProvider>
-
-  );
+            typography: {
+                fontFamily: [
+                    'Gilroy'
+                ].join(','),
+            },});
+        return (
+            <ThemeProvider theme={theme}>
+                <div className="App">
+                    <NavBar/>
+                    <Intro/>
+                    <AboutMe/>
+                    <WorkExperience/>
+                    <Projects/>
+                    <ContactMe/>
+                    <Footer/>
+                    {this.state.lastScrollY < 500 ? <Arrow direction="down"/> : <Arrow direction="up"/>}
+                </div>
+            </ThemeProvider>
+        );
+    }
 }
 
 export default App;

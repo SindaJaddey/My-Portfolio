@@ -5,6 +5,7 @@ import certif from '../assets/images/aws-developer-associate.png';
 import Badge from "./badges/badge";
 import Zoom from "react-reveal";
 import Fade from "react-reveal";
+import Arrow from "../arrow/arrow";
 
 
 const AboutMe = () => {

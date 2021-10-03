@@ -15,8 +15,6 @@ class NavBar extends Component  {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-    nav = React.createRef();
-
     handleScroll = () => {
         this.setState({
            lastScrollY: window.scrollY

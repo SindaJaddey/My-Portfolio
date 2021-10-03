@@ -1,8 +1,13 @@
-a { color: #485745; text-decoration: none; }
+.up {
+    text-align: right;
+    position: fixed;
+    right: 1%; bottom: 1%;
+}
 
-.arrow {
+.down {
     text-align: center;
 }
+
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;

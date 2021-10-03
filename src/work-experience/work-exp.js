@@ -9,6 +9,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import {Typography} from "@mui/material";
 import Zoom from "react-reveal";
 import Fade from "react-reveal";
+import Arrow from "../arrow/arrow";
 
 const WorkExperience = () => {
     const windowWidth = window.innerWidth
@@ -83,6 +84,7 @@ const WorkExperience = () => {
                             </div>)}
                 </div>
             </div>
+
         </Zoom>
     )
 }
