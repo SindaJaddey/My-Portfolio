@@ -26,9 +26,11 @@
     font-size: 15px;
     text-align: center;
     color: #ffffff;
+    word-wrap: break-word;
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
     .badge{
         width: 100%;
     }
