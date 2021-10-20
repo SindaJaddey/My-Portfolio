@@ -11,7 +11,6 @@ import ContactMe from "./contact-me/contact-me";
 import Footer from "./footer/footer";
 import Arrow from "./arrow/arrow";
 import React, {Component} from "react";
-import {Router, withRouter} from "react-router-dom";
 
 
 class App extends Component{

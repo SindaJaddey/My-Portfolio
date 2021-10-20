@@ -22,8 +22,7 @@ class WorkExperience extends Component{
                     "Implemented Infrastructure as Code - IaC to manage, track and maintain deployed AWS services.",
                     "Wrote Python scripts for data connectivity to the deployed databases and data streaming services in AWS.",
                     "Implemented multi-threading using Python for data connectivity to AWS Kinesis Streams.",
-                    "Implemented auto-scaling mechanism for AWS Kinesis Stream using AWS CloudWatch alarms.",
-                    "Designed and deployed a serverless ETL pipeline that consumes user input."
+                    "Implemented auto-scaling mechanism for AWS Kinesis Stream using AWS CloudWatch alarms."
                 ]
             },
             {
@@ -32,8 +31,8 @@ class WorkExperience extends Component{
                 duration: "Jul. 2020 – Sept. 2020, Tunisia",
                 bullets: [
                     "Participated in the product development process of a system that monitors and controls electronic shelf labels for supermarkets.",
-                    "Put together RESTful APIs for the back-end that served data to the front-end.",
-                    "Conducted unit and integration testing on the back-end’s APIs with 60% code coverage.",
+                    "Put together RESTful APIs for the back-end.",
+                    "Conducted unit and integration testing on the back-end’s APIs.",
                     "Set up a CI/CD pipeline and enabled e-mail notifications of build results and output logs.",
                 ]
             },
@@ -61,7 +60,7 @@ class WorkExperience extends Component{
                                                 <TimelineConnector/>
                                             </TimelineSeparator>
                                             <TimelineContent>
-                                                <Typography variant="h4" component="span" style={{'color': "#45433E"}}>
+                                                <Typography variant="h5" component="span" style={{'color': "black", 'font-weight':'600'}}>
                                                     {experience.enterprise} | {experience.title}<br/> {experience.duration}
                                                 </Typography>
                                                 <Typography variant={'h6'} style={{'color': "#45433E"}}>

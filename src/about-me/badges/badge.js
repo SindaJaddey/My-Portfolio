@@ -15,8 +15,9 @@ const Badge = ({img, verificationLink}) => {
                 <div className="row">
                     <div className="col-sm col-md-4"><img src={img} width={160}/></div>
                     <div className="col-sm col-md-8 mt-auto mb-auto">
-                        <div className="badge-title">AWS Certified Developer – Associate</div>
-                        <div className="badge-description mt-2">Issued by Amazon Web Services Training and Certification</div>
+                        <div className="row badge-title">AWS Certified Developer – Associate</div>
+                        <div className="row badge-description mt-2">
+                            Issued by Amazon Web Services Training and Certification</div>
                         <button type="button" className="btn btn-outline-light mt-4" onClick={verifyCertif}>Verify Certificate</button>
                     </div>
                 </div>

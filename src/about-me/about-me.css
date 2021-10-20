@@ -36,6 +36,9 @@
     color: #eeb900;
 }
 
+#sinda-img {
+    height: 350px;
+}
 
 @media screen and (max-width: 768px){
     .title{
@@ -52,5 +55,9 @@
     #about-me{
         width: 90%;
         height: 100%;
+    }
+
+    #sinda-img {
+        height: 300px;
     }
 }

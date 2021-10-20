@@ -26,7 +26,6 @@
     font-size: 15px;
     text-align: center;
     color: #ffffff;
-    word-wrap: break-word;
 }
 
 @media screen and (max-width: 768px){
@@ -34,8 +33,7 @@
         width: 100%;
     }
 
-    .badge-description{
-        word-wrap: break-word;
-        text-align: left;
+    .badge-description, .badge-title {
+        white-space: normal;
     }
 }

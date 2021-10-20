@@ -33,7 +33,7 @@ class NavBar extends Component  {
                                 <Nav.Link href="#work-experience">Work Experience</Nav.Link>
                                 <Nav.Link href="#projects">Projects</Nav.Link>
                                 <Nav.Link href="#contact-me">Contact</Nav.Link>
-                                <Nav.Link href="#contact">Resume</Nav.Link>
+                                <Nav.Link href="https://sindajeddey.s3.eu-west-3.amazonaws.com/cv.pdf">Resume</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

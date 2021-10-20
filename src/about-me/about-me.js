@@ -1,11 +1,10 @@
 import React from "react";
 import './about-me.css';
-import image from '../assets/images/sinda.png';
+import image from '../assets/images/sinda2.jpg';
 import certif from '../assets/images/aws-developer-associate.png';
 import Badge from "./badges/badge";
 import Zoom from "react-reveal";
 import Fade from "react-reveal";
-import Arrow from "../arrow/arrow";
 
 
 const AboutMe = () => {
@@ -25,15 +24,17 @@ const AboutMe = () => {
                 <div className="row">
                     <Fade bottom>
                         <div className="col-sm-12 col-md-12 col-lg-7 pt-2 about-description">
-                            Hi, my name is Sinda Jeddey and I’m a last year software engineering student specialized in DevOps and Cloud Computing.
+                            Hi, my name is Sinda Jeddey and I’m a last year software engineering student specialized in <strong>DevOps</strong> and <strong>Cloud Computing</strong>.
                             These fields sparked interest and curiosity in me in the early start of 2019 and from then started my journey.
-                            <br/>I also got certified as an AWS Certified Developer Associate.
-                            <br/>I also got the chance to work on multiple web applications in both front-end and back-end development.
+                            <br/>In May 2021, I got certified as an <strong>AWS Certified Developer Associate</strong>.
+                            <br/>
+                            <br/>Fast forward to today, I've taken part of multiple projects in which I've held
+                            different roles from <strong>fullstack developer</strong> to provisioning and maintaining <strong>cloud infrastructure</strong>.
                         </div>
                     </Fade>
                     <Fade bottom>
-                        <div className="col-sm-12 col-md-12 col-lg-5">
-                            <img src={image} height={300} className="image"/>
+                        <div className="col-sm-12 col-md-12 col-lg-5 img-fluid">
+                            <img src={image} height={350} className="image " id="sinda-img"/>
                         </div>
                     </Fade>
                 </div>
