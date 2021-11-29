@@ -1,7 +1,8 @@
 import React from "react";
 import './about-me.css';
 import image from '../assets/images/sinda2.jpg';
-import certif from '../assets/images/aws-developer-associate.png';
+import aws from '../assets/images/aws-developer-associate.png';
+import tf from '../assets/images/terraform-associate.png';
 import Badge from "./badges/badge";
 import Zoom from "react-reveal";
 import Fade from "react-reveal";
@@ -62,7 +63,12 @@ const AboutMe = () => {
                 <div className="row">
                     <Fade bottom>
                         <div className="row sub-title">Certifications:</div>
-                        <Badge img={certif} verificationLink={"https://www.credly.com/badges/10d8b0c1-a84a-4942-ae12-c59cb9791dad "}/>
+                        <Badge title={"AWS Certified Developer – Associate"}
+                               issuedBy={"Amazon Web Services Training and Certification"}
+                               img={aws} verificationLink={"https://www.credly.com/badges/10d8b0c1-a84a-4942-ae12-c59cb9791dad/public_url "}/>
+                        <Badge title={"HashiCorp Certified: Terraform Associate"}
+                               issuedBy={"HashiCorp"}
+                               img={tf} verificationLink={"https://www.credly.com/badges/051ef02e-b4e3-47b6-b95a-618c9b19d609/public_url "}/>
                     </Fade>
                 </div>
             </div>
